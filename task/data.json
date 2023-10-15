@@ -1,0 +1,83 @@
+{
+  "createAccount": [
+    {
+      "email": "abhijitgode99@gmail.com",
+      "username": "dflksdjf",
+      "password": "sdfk",
+      "id": 1
+    },
+    {
+      "email": "abhijitgode99@gmail.com",
+      "username": "Abhijit gode",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "fds",
+      "username": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "email": "abhi@123",
+      "username": "abhi",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "email": "praju@123",
+      "username": "praju",
+      "password": "12345",
+      "id": 5
+    }
+  ],
+  "post": [
+    {
+      "caption": "dfdsfsa",
+      "image": "C:\\fakepath\\WhatsApp Image 2023-10-09 at 8.02.54 PM.jpeg",
+      "id": 1
+    },
+    {
+      "caption": "erewe",
+      "image": "C:\\fakepath\\WhatsApp Image 2023-10-09 at 8.02.54 PM.jpeg",
+      "id": 2
+    },
+    {
+      "caption": "good morning",
+      "image": "C:\\fakepath\\WhatsApp Image 2023-08-26 at 9.52.46 PM.jpeg",
+      "id": 3
+    },
+    {
+      "caption": "hello",
+      "image": "C:\\fakepath\\WhatsApp Image 2023-10-09 at 8.02.54 PM.jpeg",
+      "id": 4
+    },
+    {
+      "caption": "cool",
+      "image": "C:\\fakepath\\hall.jpg",
+      "id": 5
+    }
+  ],
+  "comment": [
+    {
+      "text": "nice picture",
+      "id": 1
+    },
+    {
+      "text": "dfsfsf",
+      "id": 2
+    },
+    {
+      "text": "hello",
+      "id": 3
+    },
+    {
+      "text": "nice",
+      "id": 4
+    },
+    {
+      "text": "hii",
+      "id": 5
+    }
+  ]
+}

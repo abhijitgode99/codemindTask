@@ -1,0 +1,22 @@
+<div class="row justify-content-center">
+    <div class="col-sm-4 mt-4 ">
+    <div class="card">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <h3 class="text-center mx-4 my-4">Login</h3>
+        <div class="form-group mx-4 my-4">
+          <input formControlName="email" type="email" class="form-control" id="email" placeholder="Enter your email" >
+          <small lass="text-danger" *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched">email is required</small>
+        </div>
+        <div class="form-group mx-4 my-4" >
+          <input formControlName="password" type="password" #pass class="form-control" id="password" placeholder="Enter your password" >
+          <small lass="text-danger" *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched">password is required</small>
+        </div> 
+        <button type="submit" class="btn btn-primary ">Login</button>
+        
+        <h4 class="text-center mx-2 my-2">OR</h4>
+        <!-- <h4 class="text-center mx-2 my-4"><strong>Create account</strong></h4> -->
+        <a style="color:black" routerLink="/createAccount"><h4 class="text-center mx-2 my-4"><strong>Create account</strong></h4></a>
+      </form> 
+    </div>
+    </div>
+</div>

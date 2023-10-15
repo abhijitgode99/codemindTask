@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+    <div class="col-sm-4 mt-4">
+    <div class="card ">
+    <form [formGroup]="createAccount" (ngSubmit)="newAccount()">
+        <h3 class="text-center mx-4 my-4">Create Account</h3>
+        <div class="form-group mx-4 my-4">
+          <input  formControlName="email" type="email" class="form-control" #email id="email" ngModel placeholder="Enter your email" required>
+          <small class="text-danger" *ngIf="!createAccount.get('email').valid && createAccount.get('email').touched">email is required</small>
+        </div>
+        <div class="form-group mx-4 my-4" >
+            <input formControlName="username" type="text" class="form-control" id="username" placeholder="Enter your username" required>
+            <small class="text-danger" *ngIf="!createAccount.get('username').valid && createAccount.get('username').touched">Username is required</small>
+
+          </div>
+        <div class="form-group mx-4 my-4" >
+          <input formControlName="password" type="password" #pass class="form-control" id="password" placeholder="Enter your password" required>
+          <small class="text-danger" *ngIf="!createAccount.get('password').valid && createAccount.get('password').touched">password is required</small>
+          
+        </div>
+        <button  type="submit" class="btn btn-primary ">Create Account</button>  
+        <h4 class="text-center mx-2 my-2">OR</h4>
+        <a style ="color:black" routerLink="/login"><h4 class="text-center mx-2 my-4"><strong>Login</strong></h4></a>
+      </form>
+    </div>
+    </div>
+</div> 

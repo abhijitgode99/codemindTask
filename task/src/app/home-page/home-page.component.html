@@ -1,0 +1,40 @@
+ 
+ <header>
+    <nav>
+      <ul class="navbar navbar-expand-lg navbar-light bg-primary" >
+        <li class="nav-item">
+          <!-- <a class="navbar navbar-expand-lg navbar-light bg-primary" routerLinkActive="active" >Login</a> -->
+        </li>
+      </ul>
+    </nav>
+ </header>
+<div class="row justify-content-center" >
+    <div class="col-sm-4 mt-4 ">
+        <form [formGroup]="post" (ngSubmit)="postImage()">
+              <textarea formControlName="caption" class="form-control my-4" row="3s" id="bio" placeholder="say something" ></textarea>     
+            <button type="submit"  class="btn btn-primary ">Post</button>
+            <input type="file" formControlName="image" id="image" name="image" class="form-control w-50">
+          </form>
+    <div class="card mt-4 m-100" *ngFor="let value of newArray" >
+        <div><p class="mx-4"><strong>{{username}}</strong></p>
+        <div>
+            <tr>
+                <div><img class="mx-2 my-2" width="450" height="450px"[src]="value.image" alt=""></div>
+                <!-- <td> {{value.image}}</td> -->
+                <div><td > {{value.caption}}</td></div>
+            </tr>
+                <div (click)="onHeartClick()" class="my-2">
+                    <i class="fas fa-heart fa-lg mx-2 my-2"  [class.clicked-heart]="isClicked"></i>
+                    <i>{{ likes }}</i> liked it
+                </div>
+                <div *ngFor="let value of newArray1">     
+                        <p><strong>{{username}}_</strong> {{value.text}}</p>
+                </div>
+                <div>
+                    <input type="text" class="form-control w-200 mx-2 my-2" id="comment1" [(ngModel)]="commentText">
+                    <button type="comment " id="comment2" (click)="saveComment()" class="form-control bg-primary btn mx-2">comment</button>
+                </div>
+        </div>
+    </div>
+    </div>
+</div>
